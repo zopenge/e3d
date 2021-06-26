@@ -3,7 +3,7 @@ project(platform)
 add_library(platform PlatformPCH.cpp)
 
 target_include_directories(${PROJECT_NAME} PUBLIC 
-    ${PROJECT_SOURCE_DIR}/include;${ROOT_DIR}/libs
+    ${ROOT_DIR}/include;${ROOT_DIR}/libs;${ROOT_DIR}/libs/crt;${ROOT_DIR}/libs/pthread/include
 )
 
 include(${ROOT_DIR}/cmake/macros.cmake)
