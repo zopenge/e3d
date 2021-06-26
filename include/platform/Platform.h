@@ -18,47 +18,29 @@ namespace E3D {
  * Platform.
  */
 class Platform {
-	//! Callback Functions Declaration
+
 public:
-	//! The socket connect break function.
-	typedef _boolean (*OnIsBreakConnectingProc)(_dword elapse, _void* userdata);
+#pragma region "Kernel"
 
-	//! QueueUserAPC callback function.
-	typedef _void (*OnAPCProc)(_void*);
-	//! Thread start routine callback function.
-	typedef _thread_ret (*OnThreadStartRoutine)(_void*);
-
-	//! When enumerate resource callback function.
-	//! @param type   The resource type.
-	//! @param name   The resource name.
-	//! @param parameter  An application-defined value passed to the callback function.
-	//! @return True indicates success false indicates failure.
-	typedef _boolean (*OnEnumResNameProc)(const _charw* type, const _charw* name, _void* parameter);
-
-	//! Kernel Functions
-public:
-	//! Initialize.
-	//! @param none.
-	//! @return True indicates success false indicates failure.
+	/**
+	 * @brief Initialize.
+	 * 
+	 * @return _boolean 
+	 */
 	static _boolean Initialize();
-	//! Finalize.
-	//! @param none.
-	//! @return none.
+
+	/**
+	 * @brief Finalize.
+	 * 
+	 * @return _void 
+	 */
 	static _void Finalize();
 
-	//! Get the OS data.
-	//! @param none.
-	//! @return The OS data.
-	static const OSData& GetOSData();
-
-	//! Check whether it's embedded system or not.
-	//! @param none.
-	//! @return True indicates it's embedded system.
-	static _boolean IsEmbeddedSystem();
-
-	//! Initializes a critical section object.
-	//! @param none.
-	//! @return The critical section object handle.
+	/**
+	 * @brief Initializes a critical section object.
+	 * 
+	 * @return _handle The critical section object handle.
+	 */
 	static _handle InitializeCriticalSection();
 	//! Delete a critical section object.
 	//! @param object   The critical section object handle.
@@ -78,10 +60,13 @@ public:
 	//! @return none.
 	static _void CloseHandle(_handle handle);
 
-	//! Waits until the specified object is in the signaled state or the time-out interval elapses.
-	//! @param object   A handle to the object.
-	//! @param milliseconds The time-out interval, in milliseconds.
-	//! @return True if the object is signaled before time out, false otherwise.
+	/**
+	 * @brief Waits until the specified object is in the signaled state or the time-out interval elapses.
+	 * 
+	 * @param[in] object A handle to the object.
+	 * @param[in] milliseconds The time-out interval, in milliseconds.
+	 * @return _boolean True if the object is signaled before time out, false otherwise.
+	 */
 	static _boolean WaitForSingleObject(_handle object, _dword milliseconds);
 	//! Clone event object.
 	//! @param object   A handle to the event object.
@@ -115,8 +100,10 @@ public:
 	//! @return none.
 	static _void Sleep(_dword milliseconds);
 
-	//! Endian
-public:
+#pragma endregion
+
+#pragma region "Endian"
+
 	//! Check whether it's little endian or not.
 	//! @param none.
 	//! @return True indicates it's little endian system.
@@ -129,6 +116,8 @@ public:
 	//! @param none.
 	//! @return The endian type.
 	static Endian GetEndianType();
+
+#pragma endregion
 
 	//! CPU
 public:
@@ -480,6 +469,10 @@ public:
 	//! @param handle   The listened socket handle.
 	//! @return The socket what try to connect and be accepted.
 	static _socket AcceptSocket(_socket handle);
+
+	//! The socket connect break function.
+	typedef _boolean (*OnIsBreakConnectingProc)(_dword elapse, _void* userdata);
+
 	//! Connect socket.
 	//! @param handle   The socket handle.
 	//! @param remote_address The remote address.
@@ -664,6 +657,12 @@ public:
 	//! @param last_sample_delta The last sample delta time of CPU usage tracking.
 	//! @return The amount of CPU usage in [0.0 ~ 100.0].
 	static _float GetThreadCPUUsage(_handle thread, _dword timenow, _qword& last_thread_time, _qword& last_sample_time, _qword& last_sample_delta);
+
+	//! QueueUserAPC callback function.
+	typedef _void (*OnAPCProc)(_void*);
+	//! Thread start routine callback function.
+	typedef _thread_ret (*OnThreadStartRoutine)(_void*);
+
 	//! Adds a user-mode asynchronous procedure call (APC) object to the APC queue of the specified thread.
 	//! @param thread   A handle to the thread.
 	//! @param funcpointer  A pointer to the application-supplied APC function to be called when the specified thread performs an alertable wait operation.
@@ -968,6 +967,14 @@ public:
 	//! @param resinfo   A handle to the resource.
 	//! @return The number of bytes in the resource.
 	static _dword SizeOfResource(_handle module, _handle resinfo);
+
+	//! When enumerate resource callback function.
+	//! @param type   The resource type.
+	//! @param name   The resource name.
+	//! @param parameter  An application-defined value passed to the callback function.
+	//! @return True indicates success false indicates failure.
+	typedef _boolean (*OnEnumResNameProc)(const _charw* type, const _charw* name, _void* parameter);
+
 	//! Enumerates resources of a specified type within a binary module.
 	//! @param module   A handle to the module whose portable executable file.
 	//! @param funcpointer  A pointer to the callback function to be called for each enumerated resource name or ID.
@@ -1659,4 +1666,4 @@ CharType* Platform::FormatStringBuffer(CharType* buffer, _dword size, const Char
 	return Platform::FormatStringByArguments(buffer, size, format, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10);
 }
 
-} // namespace EGE
+} // namespace E3D
