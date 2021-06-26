@@ -190,8 +190,9 @@ wchar_t* __u64tow__(unsigned long long value, wchar_t* result, int base);
 
 #endif
 
-// E3D Headers
-#include "e3d.h"
+// Platform Modules Headers
+#include "e3d_platform.h"
+#include "platform/Platform.h"
 
 // Any-OS Files
 #include "os/anyPlatform.h"

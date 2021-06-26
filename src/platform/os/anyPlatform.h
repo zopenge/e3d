@@ -11,7 +11,7 @@
 
 #pragma once
 
-namespace EGE {
+namespace E3D {
 
 /**
  * @brief 
@@ -23,9 +23,9 @@ public:
 	/**
 	 * @brief Initialize.
 	 * 
-	 * @return _ubool 
+	 * @return _boolean 
 	 */
-	static _ubool Initialize();
+	static _boolean Initialize();
 
 	/**
 	 * @brief Finalize.
