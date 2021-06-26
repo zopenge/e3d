@@ -1,0 +1,803 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="include\OS">
+      <UniqueIdentifier>{3b92f317-ae3a-4894-a8a3-53e83a07982e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\OS\windows">
+      <UniqueIdentifier>{afe74f1c-9cdb-4c72-b353-640d92d145a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Platform">
+      <UniqueIdentifier>{40d4f633-99b4-4185-92ea-8aa926c127da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Template">
+      <UniqueIdentifier>{aa3d1c4b-426a-4061-b321-9c8c4f7b69cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pch">
+      <UniqueIdentifier>{7df84ab2-12d1-4158-b043-78abd7e78a74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs">
+      <UniqueIdentifier>{3d56199b-e039-4f4d-b644-f0105148d3c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs\uchar">
+      <UniqueIdentifier>{45c0f8c9-1ac5-4e0f-af89-90f253d5d768}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs\zlib">
+      <UniqueIdentifier>{24fcedde-3de5-4b56-8282-5e03343eb870}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs\dbgheap">
+      <UniqueIdentifier>{547d2064-02f2-4139-b6f8-22aa82603fb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="src\Library">
+      <UniqueIdentifier>{c956d04e-121c-4366-b4fd-573d4ac16dcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\DebugSymbol">
+      <UniqueIdentifier>{61a63ac9-dfbd-4b86-adf4-f8d904852b32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\CallStack">
+      <UniqueIdentifier>{0b9b8676-bd67-4236-be9a-895a51373a40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\OS">
+      <UniqueIdentifier>{ea970a82-4eda-4a2d-8158-52ef5ee158b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\OS\any">
+      <UniqueIdentifier>{b89acf31-44b7-4700-b929-a72c667d70ee}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Source\Platform\Box.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\Camera.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\Color.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\CRC.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\DirectoryRecorder.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\EulerAngles.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\File.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\FileFinder.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\FileMapping.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\FileSystem.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\Frustum.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\Intersection.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\KernelObject.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\Library.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\Lock.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\Matrix2.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\Matrix3.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\Matrix3x4.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\Matrix4.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\MD5.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\Memory.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\PersistenceThread.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\Pipe.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\Plane.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\Quaternion.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\Ray.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\Sphere.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\StringFormatter.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\SyncObject.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\Thread.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\Time.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\Triangle.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\UID.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\Variable.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\Vector2.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\Vector3.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\Vector4.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\Version.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\Viewport.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\EGEPlatform.cpp">
+      <Filter>pch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\Timer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\Library\winLibrary.cpp">
+      <Filter>src\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\DebugSymbol\winDebugSymbol.cpp">
+      <Filter>src\DebugSymbol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\CallStack\winCallStack.cpp">
+      <Filter>src\CallStack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\Path.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\Random.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\FlagsObject.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\Camera2D.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\FPSTimer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\Transform3D.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\Transform2D.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\Serializer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\External\zlib\adler32.c">
+      <Filter>libs\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\External\zlib\compress.c">
+      <Filter>libs\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\External\zlib\crc32.c">
+      <Filter>libs\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\External\zlib\deflate.c">
+      <Filter>libs\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\External\zlib\gzclose.c">
+      <Filter>libs\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\External\zlib\gzlib.c">
+      <Filter>libs\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\External\zlib\gzread.c">
+      <Filter>libs\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\External\zlib\gzwrite.c">
+      <Filter>libs\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\External\zlib\infback.c">
+      <Filter>libs\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\External\zlib\inffast.c">
+      <Filter>libs\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\External\zlib\inflate.c">
+      <Filter>libs\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\External\zlib\inftrees.c">
+      <Filter>libs\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\External\zlib\trees.c">
+      <Filter>libs\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\External\zlib\uncompr.c">
+      <Filter>libs\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\External\zlib\zutil.c">
+      <Filter>libs\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\Triangle2D.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\Ratio.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\Precision.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\External\uchar\uchar.cpp">
+      <Filter>libs\uchar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\ValueEncoder.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\External\crt\dbgheap\dbgheap.c">
+      <Filter>libs\dbgheap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\TempDir.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\Bounds.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\CallStackFrame.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\Mathics.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\ColliderBox2D.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\OS\anyPlatform.cpp">
+      <Filter>src\OS\any</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\OS\anyPlatformConverter.cpp">
+      <Filter>src\OS\any</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\OS\anyPlatformCPU.cpp">
+      <Filter>src\OS\any</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\OS\anyPlatformDebugging.cpp">
+      <Filter>src\OS\any</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\OS\anyPlatformEndian.cpp">
+      <Filter>src\OS\any</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\OS\anyPlatformLanguage.cpp">
+      <Filter>src\OS\any</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\OS\anyPlatformMemory.cpp">
+      <Filter>src\OS\any</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\OS\anyPlatformNetwork.cpp">
+      <Filter>src\OS\any</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\OS\anyPlatformProcess.cpp">
+      <Filter>src\OS\any</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\OS\anyPlatformString.cpp">
+      <Filter>src\OS\any</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\OS\anyPlatformTime.cpp">
+      <Filter>src\OS\any</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\OS\win\winPlatform.cpp">
+      <Filter>src\OS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\OS\win\winPlatformConsole.cpp">
+      <Filter>src\OS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\OS\win\winPlatformConverter.cpp">
+      <Filter>src\OS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\OS\win\winPlatformCPU.cpp">
+      <Filter>src\OS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\OS\win\winPlatformDebugging.cpp">
+      <Filter>src\OS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\OS\win\winPlatformDevice.cpp">
+      <Filter>src\OS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\OS\win\winPlatformEndian.cpp">
+      <Filter>src\OS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\OS\win\winPlatformEnvironment.cpp">
+      <Filter>src\OS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\OS\win\winPlatformGPU.cpp">
+      <Filter>src\OS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\OS\win\winPlatformIO.cpp">
+      <Filter>src\OS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\OS\win\winPlatformKernel.cpp">
+      <Filter>src\OS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\OS\win\winPlatformLanguage.cpp">
+      <Filter>src\OS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\OS\win\winPlatformMemory.cpp">
+      <Filter>src\OS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\OS\win\winPlatformNetwork.cpp">
+      <Filter>src\OS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\OS\win\winPlatformProcess.cpp">
+      <Filter>src\OS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\OS\win\winPlatformResource.cpp">
+      <Filter>src\OS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\OS\win\winPlatformString.cpp">
+      <Filter>src\OS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\OS\win\winPlatformTime.cpp">
+      <Filter>src\OS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platform\OS\win\winPlatformVersion.cpp">
+      <Filter>src\OS</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Source\EGEPlatform.h">
+      <Filter>pch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\External\uchar\inttypes.h">
+      <Filter>libs\uchar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\External\uchar\uchar.h">
+      <Filter>libs\uchar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\OS\windows\Win32Headers.h">
+      <Filter>include\OS\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\OS\NetworkOSHeader.h">
+      <Filter>include\OS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\External\zlib\zutil.h">
+      <Filter>libs\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\External\zlib\crc32.h">
+      <Filter>libs\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\External\zlib\deflate.h">
+      <Filter>libs\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\External\zlib\gzguts.h">
+      <Filter>libs\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\External\zlib\inffast.h">
+      <Filter>libs\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\External\zlib\inffixed.h">
+      <Filter>libs\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\External\zlib\inflate.h">
+      <Filter>libs\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\External\zlib\inftrees.h">
+      <Filter>libs\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\External\zlib\trees.h">
+      <Filter>libs\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\External\zlib\zconf.h">
+      <Filter>libs\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\External\zlib\zlib.h">
+      <Filter>libs\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\External\crt\dbgheap\dbgint.h">
+      <Filter>libs\dbgheap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\Box.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\Camera.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\Camera2D.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\Color.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\CRC.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\DebugSymbol.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\DirectoryRecorder.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\EulerAngles.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\File.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\FileFinder.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\FileMapping.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\FileSystem.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\FlagsObject.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\FPSTimer.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\Frustum.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\Interpolation.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\Intersection.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\KernelObject.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\KeyCodes.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\Library.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\Lock.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\Matrix2.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\Matrix3.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\Matrix3x4.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\Matrix4.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\Matrix4Adjustor.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\MD5.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\Memory.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\Path.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\PersistenceThread.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\Pipe.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\Plane.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\Platform.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\PlatformConfig.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\PlatformGlobal.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\Precision.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\Quaternion.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\Random.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\Ratio.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\Ray.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\Serializer.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\Sphere.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\StringFormatter.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\SyncObject.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\TempDir.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\Thread.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\Time.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\Timer.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\Transform2D.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\Transform3D.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\Triangle.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\Triangle2D.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\UID.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\ValueEncoder.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\Variable.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\Vector2.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\Vector3.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\Vector4.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\Version.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\Viewport.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\IPAddress.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\Bounds.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Template\Triple.h">
+      <Filter>include\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Template\Tree.h">
+      <Filter>include\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Template\Algorithm.h">
+      <Filter>include\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Template\Array.h">
+      <Filter>include\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Template\BaseRef.h">
+      <Filter>include\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Template\BinaryHeap.h">
+      <Filter>include\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Template\BitArray.h">
+      <Filter>include\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Template\CallbackFunc.h">
+      <Filter>include\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Template\Compare.h">
+      <Filter>include\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Template\ConcurrentQueue.h">
+      <Filter>include\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Template\ConstString.h">
+      <Filter>include\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Template\CountOf.h">
+      <Filter>include\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Template\DataField.h">
+      <Filter>include\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Template\DataOwner.h">
+      <Filter>include\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Template\DependencyGraph.h">
+      <Filter>include\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Template\Graph.h">
+      <Filter>include\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Template\HashMap.h">
+      <Filter>include\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Template\Link.h">
+      <Filter>include\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Template\Map.h">
+      <Filter>include\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Template\MutableString.h">
+      <Filter>include\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Template\PagePool.h">
+      <Filter>include\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Template\Pair.h">
+      <Filter>include\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Template\Params.h">
+      <Filter>include\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Template\PassRefPtr.h">
+      <Filter>include\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Template\Point.h">
+      <Filter>include\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Template\Progression.h">
+      <Filter>include\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Template\Quadruple.h">
+      <Filter>include\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Template\Queue.h">
+      <Filter>include\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Template\Range.h">
+      <Filter>include\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Template\RBTree.h">
+      <Filter>include\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Template\Rect.h">
+      <Filter>include\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Template\RefObject.h">
+      <Filter>include\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Template\RefPtr.h">
+      <Filter>include\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Template\SafeValue.h">
+      <Filter>include\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Template\Stack.h">
+      <Filter>include\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\EGE_Always.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\EGE_Compile.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\EGE_Config.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\EGE_Const.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\EGE_Platform.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\EGE_Template.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\EGE_Typedef.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\CallStackFrame.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Template\FixedArray.h">
+      <Filter>include\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Template\BaseMemPtr.h">
+      <Filter>include\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Template\MemPtr.h">
+      <Filter>include\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Template\MemSegmentPtr.h">
+      <Filter>include\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\EGE_Struct.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\Mathics.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Template\Line.h">
+      <Filter>include\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Platform\ColliderBox2D.h">
+      <Filter>include\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Platform\OS\anyPlatform.h">
+      <Filter>src\OS\any</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Platform\OS\anyPlatformConverter.h">
+      <Filter>src\OS\any</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Platform\OS\anyPlatformCPU.h">
+      <Filter>src\OS\any</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Platform\OS\anyPlatformEndian.h">
+      <Filter>src\OS\any</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Platform\OS\anyPlatformLanguage.h">
+      <Filter>src\OS\any</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Platform\OS\anyPlatformMemory.h">
+      <Filter>src\OS\any</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Platform\OS\anyPlatformNetwork.h">
+      <Filter>src\OS\any</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Platform\OS\anyPlatformProcess.h">
+      <Filter>src\OS\any</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Platform\OS\anyPlatformString.h">
+      <Filter>src\OS\any</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Platform\OS\anyPlatformTime.h">
+      <Filter>src\OS\any</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
