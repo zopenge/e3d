@@ -15,7 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "props", "props", "{F9B91146
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libs", "libs", "{1936B754-B411-4F58-B49A-99E4F7D1A04E}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "platform.win", "platform\platform.win.vcxproj", "{4C0C4378-E2B3-40E7-1111-1283FDE510DE}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "platform.win", "platform\win\platform.win.vcxproj", "{4C0C4378-E2B3-40E7-1111-1283FDE510DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
