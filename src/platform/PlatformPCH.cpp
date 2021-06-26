@@ -1,14 +1,23 @@
-#include "EGEPlatform.h"
+/**
+ * @file PlatformPCH.cpp
+ * @author zopenge (zopenge@126.com)
+ * @brief The precompiled header of platform module.
+ * @version 0.1
+ * @date 2021-06-26
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
+#include "PlatformPCH.h"
+
+#pragma region "Global variables implementation"
 
 _thread_id EGE::gMainThreadID = 0;
 PerformanceData EGE::gPerformanceData;
 CPUData EGE::gCPUData;
 GPUData EGE::gGPUData;
 OSData EGE::gOSData;
-
-//----------------------------------------------------------------------------
-// Specified template static variables implementation
-//----------------------------------------------------------------------------
 
 template <>
 const PointI PointI::cZeroPoint(0, 0);
@@ -70,6 +79,8 @@ template <>
 const QwordParams3 QwordParams3::cNull(0, 0, 0);
 template <>
 const QwordParams4 QwordParams4::cNull(0, 0, 0, 0);
+
+#pragma endregion
 
 //----------------------------------------------------------------------------
 // External Template Functions Implementation

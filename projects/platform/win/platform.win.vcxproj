@@ -271,10 +271,7 @@
     <ClCompile Include="..\..\..\Source\Platform\Vector4.cpp" />
     <ClCompile Include="..\..\..\Source\Platform\Version.cpp" />
     <ClCompile Include="..\..\..\Source\Platform\Viewport.cpp" />
-    <ClCompile Include="..\..\..\Source\EGEPlatform.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
-    </ClCompile>
+    <ClCompile Include="..\..\..\src\platform\PlatformPCH.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Include\EGE_Always.h" />
@@ -392,7 +389,6 @@
     <ClInclude Include="..\..\..\Include\Template\Stack.h" />
     <ClInclude Include="..\..\..\Include\Template\Tree.h" />
     <ClInclude Include="..\..\..\Include\Template\Triple.h" />
-    <ClInclude Include="..\..\..\Source\EGEPlatform.h" />
     <ClInclude Include="..\..\..\Source\External\crt\dbgheap\dbgint.h" />
     <ClInclude Include="..\..\..\Source\External\uchar\inttypes.h" />
     <ClInclude Include="..\..\..\Source\External\uchar\uchar.h" />
@@ -417,6 +413,7 @@
     <ClInclude Include="..\..\..\Source\Platform\OS\anyPlatformProcess.h" />
     <ClInclude Include="..\..\..\Source\Platform\OS\anyPlatformString.h" />
     <ClInclude Include="..\..\..\Source\Platform\OS\anyPlatformTime.h" />
+    <ClInclude Include="..\..\..\src\platform\PlatformPCH.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

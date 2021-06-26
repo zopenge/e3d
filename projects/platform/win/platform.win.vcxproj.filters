@@ -170,9 +170,6 @@
     <ClCompile Include="..\..\..\Source\Platform\Viewport.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Source\EGEPlatform.cpp">
-      <Filter>pch</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\Source\Platform\Timer.cpp">
       <Filter>src</Filter>
     </ClCompile>
@@ -377,11 +374,11 @@
     <ClCompile Include="..\..\..\Source\Platform\OS\win\winPlatformVersion.cpp">
       <Filter>src\OS</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\src\platform\PlatformPCH.cpp">
+      <Filter>pch</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\Source\EGEPlatform.h">
-      <Filter>pch</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\Source\External\uchar\inttypes.h">
       <Filter>libs\uchar</Filter>
     </ClInclude>
@@ -798,6 +795,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\Source\Platform\OS\anyPlatformTime.h">
       <Filter>src\OS\any</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\platform\PlatformPCH.h">
+      <Filter>pch</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
