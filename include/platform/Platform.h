@@ -36,29 +36,44 @@ public:
 	 */
 	static _void Finalize();
 
+#pragma endregion
+
+#pragma region "Critical Section"
+
 	/**
-	 * @brief Initializes a critical section object.
+	 * @brief Create a critical section object.
 	 * 
 	 * @return _handle The critical section object handle.
 	 */
-	static _handle InitializeCriticalSection();
-	//! Delete a critical section object.
-	//! @param object   The critical section object handle.
-	//! @return none.
+	static _handle CreateCriticalSection();
+
+	/**
+	 * @brief Delete a critical section object.
+	 * 
+	 * @param [in] object The critical section object handle.
+	 * @return _void 
+	 */
 	static _void DeleteCriticalSection(_handle object);
-	//! Enter a critical section object.
-	//! @param object   The critical section object handle.
-	//! @return none.
+
+	/**
+	 * @brief Enter a critical section object.
+	 * 
+	 * @param [in] object The critical section object handle.
+	 * @return _void 
+	 */
 	static _void EnterCriticalSection(_handle object);
-	//! Leave a critical section object.
-	//! @param object   The critical section object handle.
-	//! @return none.
+
+	/**
+	 * @brief Leave a critical section object.
+	 * 
+	 * @param [in] object The critical section object handle.
+	 * @return _void 
+	 */
 	static _void LeaveCriticalSection(_handle object);
 
-	//! Close handle.
-	//! @param handle   The handle to be closed.
-	//! @return none.
-	static _void CloseHandle(_handle handle);
+#pragma endregion
+
+#pragma region "Single Object"
 
 	/**
 	 * @brief Waits until the specified object is in the signaled state or the time-out interval elapses.
@@ -68,160 +83,164 @@ public:
 	 * @return _boolean True if the object is signaled before time out, false otherwise.
 	 */
 	static _boolean WaitForSingleObject(_handle object, _dword milliseconds);
-	//! Clone event object.
-	//! @param object   A handle to the event object.
-	//! @return A handle to the event object.
+
+	/**
+	 * @brief Clone event object.
+	 * 
+	 * @param [in] object A handle to the event object.
+	 * @return _handle A handle to the event object.
+	 */
 	static _handle CloneEvent(_handle object);
-	//! Creates or opens a named or unnamed event object.
-	//! @param manualreset  Whether the event object is manual-reset or auto-reset.
-	//! @param initialstate The initial state of the event object, true means signaled.
-	//! @return A handle to the event object.
-	static _handle CreateEvent(_boolean manualreset, _boolean initialstate);
-	//! Sets the specified event object to the signaled state.
-	//! @param object   A handle to the object.
-	//! @return True indicates success false indicates failure.
+
+	/**
+	 * @brief Create a Event object
+	 * 
+	 * @param [in] manualReset Whether the event object is manual-reset or auto-reset.
+	 * @param [in] initialState The initial state of the event object, true means signaled.
+	 * @return _handle A handle to the event object.
+	 */
+	static _handle CreateEvent(_boolean manualReset, _boolean initialState);
+
+	/**
+	 * @brief Close event.
+	 * 
+	 * @param [in] handle The handle to be closed.
+	 * @return _void 
+	 */
+	static _void CloseEvent(_handle handle);
+
+	/**
+	 * @brief Sets the specified event object to the signaled state.
+	 * 
+	 * @param [in] object A handle to the object.
+	 * @return _boolean 
+	 */
 	static _boolean SetEvent(_handle object);
-	//! Sets the specified event object to the nonsignaled state.
-	//! @param object   A handle to the object.
-	//! @return True indicates success false indicates failure.
+
+	/**
+	 * @brief Sets the specified event object to the nonsignaled state.
+	 * 
+	 * @param [in] object A handle to the object.
+	 * @return _boolean 
+	 */
 	static _boolean ResetEvent(_handle object);
 
-	//! Create auto release pool.
-	//! @param none.
-	//! @return The auto release pool handle.
-	static _handle CreateAutoReleasePool();
-	//! Release auto release pool.
-	//! @param pool   The pool handle.
-	//! @return none.
-	static _void ReleaseAutoReleasePool(_handle pool);
+#pragma endregion
 
-	//! Sleep.
-	//! @param milliseconds The milliseconds of sleep.
-	//! @return none.
+#pragma region "Thread"
+
+	/**
+	 * @brief Sleep.
+	 * 
+	 * @param [in] milliseconds The milliseconds of sleep.
+	 * @return _void 
+	 */
 	static _void Sleep(_dword milliseconds);
 
 #pragma endregion
 
 #pragma region "Endian"
 
-	//! Check whether it's little endian or not.
-	//! @param none.
-	//! @return True indicates it's little endian system.
+	/**
+	 * @brief Check whether it's little endian or not.
+	 * 
+	 * @return _boolean 
+	 */
 	static _boolean IsLittleEndian();
-	//! Check whether it's big endian or not.
-	//! @param none.
-	//! @return True indicates it's big endian system.
+
+	/**
+	 * @brief Check whether it's big endian or not.
+	 * 
+	 * @return _boolean 
+	 */
 	static _boolean IsBigEndian();
-	//! Get the endian type.
-	//! @param none.
-	//! @return The endian type.
+
+	/**
+	 * @brief Get the endian type.
+	 * 
+	 * @return Endian 
+	 */
 	static Endian GetEndianType();
 
 #pragma endregion
 
-	//! CPU
-public:
-	//! Get CPU data.
-	//! @param none.
-	//! @return The CPU data.
-	static const CPUData& GetCPUData();
-	//! Get current CPU usage.
-	//! @param none.
-	//! @return The current CPU usage in [0.0, 100.0].
+#pragma region "CPU"
+
+	/**
+	 * @brief Get current CPU usage.
+	 * 
+	 * @return _float The current CPU usage in [0.0, 100.0].
+	 */
 	static _float GetCurrentCPUUsage();
 
-	//! GPU
-public:
-	//! Get GPU data.
-	//! @param none.
-	//! @return The GPU data.
-	static const GPUData& GetGPUData();
+#pragma endregion
 
-	//! Memory
-public:
-	//! Allocate ANSI string from heap.
-	//! @param string   The ANSI string.
-	//! @param heaphandle  The process heap handle, null indicates use the current process heap handle.
-	//! @return The pointer to the allocated memory block.
-	static _chara* HeapAllocStr(const _chara* string, _handle heaphandle = _null);
-	//! Allocate UTF-16 string from heap.
-	//! @param string   The UTF-16 string.
-	//! @param heaphandle  The process heap handle, null indicates use the current process heap handle.
-	//! @return The pointer to the allocated memory block.
-	static _charw* HeapAllocStr(const _charw* string, _handle heaphandle = _null);
-	//! Allocate memory from heap.
-	//! @param size   The size of memory will be allocated in number of bytes.
-	//! @param heaphandle  The process heap handle, null indicates use the current process heap handle.
-	//! @return The pointer to the allocated memory block.
-	static _void* HeapAlloc(_dword size, _handle heaphandle = _null);
-	//! Reallocate memory from heap.
-	//! @param pointer   The pointer to the memory block to be reallocated.
-	//! @param size   The size of memory will be allocated in number of bytes.
-	//! @param heaphandle  The process heap handle, null indicates use the current process heap handle.
-	//! @return The pointer to the allocated memory block.
-	static _void* HeapReAlloc(_void* pointer, _dword size, _handle heaphandle = _null);
-	//! Frees a memory block allocated from heap.
-	//! @param pointer   The pointer to the memory block to be freed.
-	//! @param heaphandle  The process heap handle, null indicates use the current process heap handle.
-	//! @return none.
-	static _void HeapFree(_void* pointer, _handle heaphandle = _null);
+#pragma region "Memory"
 
-	//! Allocate memory from global heap.
-	//! @param size  The size of memory will be allocated in number of bytes.
-	//! @return The pointer to the allocated memory block.
-	static _void* GlobalAlloc(_dword size);
-	//! Reallocate memory from global heap.
-	//! @param pointer  The pointer to the memory block to be reallocated.
-	//! @param size  The size of memory will be allocated in number of bytes.
-	//! @return The pointer to the allocated memory block.
-	static _void* GlobalReAlloc(_void* pointer, _dword size);
-	//! Frees a memory block allocated from global heap.
-	//! @param pointer  The pointer to the memory block to be freed.
-	//! @return none.
-	static _void GlobalFree(_void* pointer);
+	/**
+	 * @brief Allocate ANSI string from heap.
+	 * 
+	 * @param [in] string The ANSI string.
+	 * @param [in] heap The process heap handle, null indicates use the current process heap handle.
+	 * @return _chara* The pointer to the allocated memory block.
+	 */
+	static _chara* HeapAllocStr(const _chara* string, _handle heap = _null);
 
-	//! Allocate memory from com global heap.
-	//! @param size  The size of memory will be allocated in number of bytes.
-	//! @return The pointer to the allocated memory block.
-	static _void* ComAlloc(_dword size);
-	//! Allocate ANSI string memory from com global heap.
-	//! @param string  The string.
-	//! @return The pointer to the allocated memory block.
-	static _charw* ComAllocString(const _chara* string);
-	//! Allocate UTF-16 string memory from com global heap.
-	//! @param string  The string.
-	//! @return The pointer to the allocated memory block.
-	static _charw* ComAllocString(const _charw* string);
-	//! Reallocate memory from com global heap.
-	//! @param pointer  The pointer to the memory block to be reallocated.
-	//! @param size  The size of memory will be allocated in number of bytes.
-	//! @return The pointer to the allocated memory block.
-	static _void* ComReAlloc(_void* pointer, _dword size);
-	//! Frees a memory block allocated from com global heap.
-	//! @param pointer  The pointer to the memory block to be freed.
-	//! @return none.
-	static _void ComFree(_void* pointer);
+	/**
+	 * @brief Allocate UTF-16 string from heap.
+	 * 
+	 * @param [in] string The UTF-16 string.
+	 * @param [in] heap The process heap handle, null indicates use the current process heap handle.
+	 * @return _charw* The pointer to the allocated memory block.
+	 */
+	static _charw* HeapAllocStr(const _charw* string, _handle heap = _null);
 
-	//! Allocate UTF-16 string.
-	//! @param string  The string.
-	//! @return The pointer to the allocated memory block.
-	static _charw* AllocString(const _charw* string);
-	//! Free UTF-16 string.
-	//! @param string  The string.
-	//! @return The pointer to the allocated memory block.
-	static _void FreeString(_charw* string);
+	/**
+	 * @brief Allocate memory from heap.
+	 * 
+	 * @param [in] size The size of memory will be allocated in number of bytes.
+	 * @param [in] heap The process heap handle, null indicates use the current process heap handle.
+	 * @return _void* The pointer to the allocated memory block.
+	 */
+	static _void* HeapAlloc(_dword size, _handle heap = _null);
 
-	//! Reserves or commits a region of pages in the virtual address space of the calling process.
-	//! @param size  The size of the region, in bytes.
-	//! @return The pointer to the allocated memory block.
-	static _void* VirtualAlloc(_dword size);
-	//! Releases, decommits, or releases and decommits a region of pages within the virtual address space of the calling process.
-	//! @param pointer  A pointer to the base address of the region of pages to be freed.
-	//! @return none.
-	static _void VirtualFree(_void* pointer);
+	/**
+	 * @brief Reallocate memory from heap.
+	 * 
+	 * @param [in] pointer The pointer to the memory block to be reallocated.
+	 * @param [in] size The size of memory will be allocated in number of bytes.
+	 * @param [in] heap The process heap handle, null indicates use the current process heap handle.
+	 * @return _void* The pointer to the allocated memory block.
+	 */
+	static _void* HeapReAlloc(_void* pointer, _dword size, _handle heap = _null);
 
-	//! IO
-public:
+	/**
+	 * @brief Frees a memory block allocated from heap.
+	 * 
+	 * @param [in] pointer The pointer to the memory block to be freed.
+	 * @param [in] heap The process heap handle, null indicates use the current process heap handle.
+	 * @return _void 
+	 */
+	static _void HeapFree(_void* pointer, _handle heap = _null);
+
+	/**
+	 * @brief Get the global heap handle.
+	 * 
+	 * @return _handle
+	 */
+	static _handle GetGlobalHeap();
+
+	/**
+	 * @brief Get the virtual heap handle.
+	 * 
+	 * @return _handle
+	 */
+	static _handle GetVirtualHeap();
+
+#pragma endregion
+
+#pragma region "IO"
+
 	//! Open the directory.
 	//! @param directory  The directory path.
 	//! @return The file finder handle.

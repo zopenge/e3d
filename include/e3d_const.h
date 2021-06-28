@@ -13,93 +13,90 @@
 
 namespace E3D {
 
-/// <summary>
-/// The seek flag.
-/// </summary>
+/**
+ * @brief The seek flag.
+ * 
+ */
 enum class SeekFlag {
-	/// <summary>
-	/// Seek from beginning.
-	/// </summary>
+	/**
+	 * @brief Seek from beginning.
+	 * 
+	 */
 	Begin,
-	/// <summary>
-	/// Seek from current position.
-	/// </summary>
+	/**
+	 * @brief Seek from current position.
+	 * 
+	 */
 	Current,
-	/// <summary>
-	/// Seek from end plus "offset".
-	/// </summary>
+	/**
+	 * @brief Seek from end plus "offset".
+	 * 
+	 */
 	End,
 };
 
-/// <summary>
-/// The encode type.
-/// </summary>
+/**
+ * @brief The encode type.
+ * 
+ */
 enum class Encoding {
-	/// <summary>
-	/// Unknown encoding.
-	/// </summary>
+	/**
+	 * @brief Unknown encoding.
+	 * 
+	 */
 	Unknown,
-	/// <summary>
-	/// ANSI encoding.
-	/// </summary>
+	/**
+	 * @brief ANSI encoding.
+	 * 
+	 */
 	Ansi,
-	/// <summary>
-	/// UTF-8 encoding.
-	/// </summary>
+	/**
+	 * @brief UTF-8 encoding.
+	 * 7
+	 */
 	Utf8,
-	/// <summary>
-	/// UTF-16 encoding.
-	/// </summary>
+	/**
+	 * @brief UTF-16 encoding.
+	 * 
+	 */
 	Utf16,
 };
 
-/// <summary>
-/// The endian type.
-/// </summary>
+/**
+ * @brief The endian type.
+ * 
+ */
 enum class Endian {
-	/// <summary>
-	/// Unknown endian.
-	/// </summary>
+	/**
+	 * @brief Unknown endian.
+	 * 
+	 */
 	Unknown,
-	/// <summary>
-	/// Little endian.
-	/// </summary>
+	/**
+	 * @brief Little endian.
+	 * 
+	 */
 	Little,
-	/// <summary>
-	/// Big endian.
-	/// </summary>
+	/**
+	 * @brief Big endian.
+	 * 
+	 */
 	Big,
 };
 
-/// <summary>
-/// The mouse button type.
-/// </summary>
-enum class MouseButton {
-	/// <summary>
-	/// The left button.
-	/// </summary>
-	Left,
-	/// <summary>
-	/// The middle button.
-	/// </summary>
-	Middle,
-	/// <summary>
-	/// The right button.
-	/// </summary>
-	Right,
-};
-
-/// <summary>
-/// The domain family type
-/// </summary>
+/**
+ * @brief The domain family type
+ * 
+ */
 enum class DomainFamilyType {
 	INET,
 	INET6,
 };
 
-/// <summary>
-/// The socket type
-/// </summary>
+/**
+ * @brief The socket type
+ * 
+ */
 enum class SocketType {
 	Stream,
 	Dgram,
@@ -107,9 +104,10 @@ enum class SocketType {
 	SeqPacket,
 };
 
-/// <summary>
-/// The file attribute
-/// </summary>
+/**
+ * @brief The file attribute
+ * 
+ */
 namespace FileAttribute {
 static unsigned int ReadOnly = 0x00000001;
 static unsigned int Hidden = 0x00000002;
@@ -128,4 +126,4 @@ static unsigned int Encrypted = 0x00004000;
 static unsigned int IntegrityStream = 0x00008000;
 }; // namespace FileAttribute
 
-} // namespace EGE
+} // namespace E3D
